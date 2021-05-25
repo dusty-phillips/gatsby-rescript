@@ -151,7 +151,7 @@ function $$default(param) {
                       style: docLinkStyle
                     }, React.createElement("a", {
                           style: linkStyle,
-                          href: "https://www.gatsbyjs.com/docs/" + "?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter"
+                          href: "https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter"
                         }, "Documentation")), Belt_Array.map(links, (function (link) {
                         return React.createElement("li", {
                                     key: link.url,

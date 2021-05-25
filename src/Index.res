@@ -154,7 +154,7 @@ let default = () => {
       <li style={docLinkStyle}>
         <a
           style={linkStyle}
-          href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}>
+          href={`https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}>
           {React.string(docLink.text)}
         </a>
       </li>
