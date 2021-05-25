@@ -1,3 +1,5 @@
+@val @scope(("process", "env")) external nodeEnv: [#development | #production] = "NODE_ENV"
+
 module Link = {
   @module("gatsby") @react.component
   external make: (~to: string, ~children: React.element) => React.element = "Link"
@@ -22,33 +24,28 @@ let codeStyles = ReactDOM.Style.make(
   (),
 )
 
-%%raw(`
-// markup
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
+@react.component
+let make = () => {
+  <main style={pageStyles}>
+    <title> {React.string("Not found")} </title>
+    <h1 style={headingStyles}> {React.string("Page not found")} </h1>
+    <p style={paragraphStyles}>
+      {React.string("Sorry ")}
+      <span role="img" ariaLabel="Pensive emoji"> {React.string(`😔`)} </span>
+      {React.string(" we couldn’t find what you were looking for. ")}
+      <br />
+      {switch nodeEnv {
+      | #development => <>
+          <br />
+          {React.string("Try creating a page in ")}
+          <code style={codeStyles}> {React.string("src/pages/")} </code>
+          <br />
+        </>
+      | _ => <> </>
+      }}
+      <br />
+      <Link to="/"> {React.string("Go home")} </Link>
+      {React.string(".")}
+    </p>
+  </main>
 }
-
-export default NotFoundPage
-`)
