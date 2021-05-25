@@ -1,0 +1,10 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx '/Users/dustyphillips/Desktop/Code/my-gatsby-site/node_modules/rescript/darwin/bsc.exe -as-ppx -bs-jsx 3'
+S /Users/dustyphillips/Desktop/Code/my-gatsby-site/node_modules/rescript/lib/ocaml
+B /Users/dustyphillips/Desktop/Code/my-gatsby-site/node_modules/rescript/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S /Users/dustyphillips/Desktop/Code/my-gatsby-site/node_modules/@rescript/react/lib/ocaml
+B /Users/dustyphillips/Desktop/Code/my-gatsby-site/node_modules/@rescript/react/lib/ocaml
+S src/pages
+B lib/bs/src/pages
+####BSB GENERATED: NO EDIT}

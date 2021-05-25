@@ -12,11 +12,16 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "rescript": "rescript build -w -with-deps"
   },
   "dependencies": {
+    "@rescript/react": "^0.10.3",
     "gatsby": "^3.4.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "rescript": "^9.1.2"
   }
 }
