@@ -5,6 +5,6 @@ B /Users/dustyphillips/Desktop/Code/my-gatsby-site/node_modules/rescript/lib/oca
 FLG -w +a-4-9-20-40-41-42-50-61-102
 S /Users/dustyphillips/Desktop/Code/my-gatsby-site/node_modules/@rescript/react/lib/ocaml
 B /Users/dustyphillips/Desktop/Code/my-gatsby-site/node_modules/@rescript/react/lib/ocaml
-S src/pages
-B lib/bs/src/pages
+S src
+B lib/bs/src
 ####BSB GENERATED: NO EDIT}
