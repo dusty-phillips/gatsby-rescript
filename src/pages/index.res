@@ -79,56 +79,63 @@ let badgeStyle = ReactDOM.Style.make(
   (),
 )
 
-%%raw(`
-const docLink = {
+type linkData = {
+  text: string,
+  url: string,
+  color: string,
+  description: string,
+  badge: bool,
+}
+
+let docLink = {
   text: "Documentation",
   url: "https://www.gatsbyjs.com/docs/",
   color: "#8954A8",
+  description: "",
+  badge: false,
 }
 
-// data
-const links = [
+let links = [
   {
     text: "Tutorial",
     url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+    description: "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
     color: "#E95800",
+    badge: false,
   },
   {
     text: "How to Guides",
     url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
+    description: "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#1099A8",
+    badge: false,
   },
   {
     text: "Reference Guides",
     url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
+    description: "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
     color: "#BC027F",
+    badge: false,
   },
   {
     text: "Conceptual Guides",
     url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
+    description: "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
     color: "#0D96F2",
+    badge: false,
   },
   {
     text: "Plugin Library",
     url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+    description: "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
     color: "#8EB814",
+    badge: false,
   },
   {
     text: "Build and Host",
     url: "https://www.gatsbyjs.com/cloud",
     badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+    description: "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
     color: "#663399",
   },
 ]
