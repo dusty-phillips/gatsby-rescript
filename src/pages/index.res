@@ -1,83 +1,89 @@
 %%raw(`
 
 import * as React from "react"
+`)
 
 // styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+let pageStyles = ReactDOM.Style.make(
+  ~color="#232129",
+  ~padding="96px",
+  ~fontFamily="-apple-system, Roboto, sans-serif, serif",
+  (),
+)
+let headingStyles = ReactDOM.Style.make(
+  ~marginTop="0px",
+  ~marginBottom="64px",
+  ~maxWidth="320px",
+  (),
+)
+let headingAccentStyles = ReactDOM.Style.make(~color="#663399", ())
+let paragraphStyles = ReactDOM.Style.make(~marginBottom="48px", ())
+let codeStyles = ReactDOM.Style.make(
+  ~color="#8A6534",
+  ~padding="4px",
+  ~backgroundColor="#FFF4DB",
+  ~fontSize="1.25rem",
+  ~borderRadius="4px",
+  (),
+)
+let listStyles = ReactDOM.Style.make(~marginBottom="96px", ~paddingLeft="0px", ())
+let listItemStyles = ReactDOM.Style.make(
+  ~fontWeight="300px",
+  ~fontSize="24px",
+  ~maxWidth="560px",
+  ~marginBottom="30px",
+  (),
+)
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+let linkStyle = ReactDOM.Style.make(
+  ~color="#8954A8",
+  ~fontWeight="bold",
+  ~fontSize="16px",
+  ~verticalAlign="5%",
+  (),
+)
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+let docLinkStyle = ReactDOM.Style.make(
+  ~color="#8954A8",
+  ~fontWeight="bold",
+  ~fontSize="16px",
+  ~verticalAlign="5%",
+  ~listStyleType="none",
+  ~marginBottom="24px",
+  (),
+)
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+let descriptionStyle = ReactDOM.Style.make(
+  ~color="#232129",
+  ~fontSize="14px",
+  ~marginTop="10px",
+  ~marginBottom="0px",
+  ~lineHeight="1.25",
+  (),
+)
 
+let badgeStyle = ReactDOM.Style.make(
+  ~color="#fff",
+  ~backgroundColor="#088413",
+  ~border="1px solid #088413",
+  ~fontSize="11px",
+  ~fontWeight="bold",
+  ~letterSpacing="1px",
+  ~borderRadius="4px",
+  ~padding="4px 6px",
+  ~display="inline-block",
+  ~position="relative",
+  ~top="-2px",
+  ~marginLeft="10px",
+  ~lineHeight="1px",
+  (),
+)
+
+%%raw(`
 const docLink = {
   text: "Documentation",
   url: "https://www.gatsbyjs.com/docs/",
   color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
 }
 
 // data

@@ -2,83 +2,92 @@
 
 
 import * as React from "react"
+;
 
-// styles
-const pageStyles = {
+var pageStyles = {
   color: "#232129",
-  padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
+  padding: "96px"
+};
+
+var headingStyles = {
+  marginTop: "0px",
+  marginBottom: "64px",
+  maxWidth: "320px"
+};
+
+var headingAccentStyles = {
+  color: "#663399"
+};
+
+var paragraphStyles = {
+  marginBottom: "48px"
+};
+
+var codeStyles = {
   backgroundColor: "#FFF4DB",
+  color: "#8A6534",
   fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+  padding: "4px",
+  borderRadius: "4px"
+};
 
-const linkStyle = {
+var listStyles = {
+  marginBottom: "96px",
+  paddingLeft: "0px"
+};
+
+var listItemStyles = {
+  fontSize: "24px",
+  fontWeight: "300px",
+  marginBottom: "30px",
+  maxWidth: "560px"
+};
+
+var linkStyle = {
   color: "#8954A8",
+  fontSize: "16px",
   fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+  verticalAlign: "5%"
+};
 
-const docLinkStyle = {
-  ...linkStyle,
+var docLinkStyle = {
+  color: "#8954A8",
+  fontSize: "16px",
+  fontWeight: "bold",
   listStyleType: "none",
-  marginBottom: 24,
-}
+  marginBottom: "24px",
+  verticalAlign: "5%"
+};
 
-const descriptionStyle = {
+var descriptionStyle = {
   color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+  fontSize: "14px",
+  lineHeight: "1.25",
+  marginTop: "10px",
+  marginBottom: "0px"
+};
+
+var badgeStyle = {
+  backgroundColor: "#088413",
+  border: "1px solid #088413",
+  color: "#fff",
+  display: "inline-block",
+  fontSize: "11px",
+  fontWeight: "bold",
+  letterSpacing: "1px",
+  lineHeight: "1px",
+  marginLeft: "10px",
+  padding: "4px 6px",
+  position: "relative",
+  top: "-2px",
+  borderRadius: "4px"
+};
 
 const docLink = {
   text: "Documentation",
   url: "https://www.gatsbyjs.com/docs/",
   color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
 }
 
 // data
@@ -188,6 +197,17 @@ export default IndexPage
 ;
 
 export {
+  pageStyles ,
+  headingStyles ,
+  headingAccentStyles ,
+  paragraphStyles ,
+  codeStyles ,
+  listStyles ,
+  listItemStyles ,
+  linkStyle ,
+  docLinkStyle ,
+  descriptionStyle ,
+  badgeStyle ,
   
 }
 /*  Not a pure module */
