@@ -1,7 +1,7 @@
-%%raw(`
-import * as React from "react"
-import { Link } from "gatsby"
-`)
+module Link = {
+  @module("gatsby") @react.component
+  external make: (~to: string, ~children: React.element) => React.element = "Link"
+}
 
 // styles
 let pageStyles = ReactDOM.Style.make(
