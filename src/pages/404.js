@@ -3,29 +3,31 @@
 
 import * as React from "react"
 import { Link } from "gatsby"
+;
 
-// styles
-const pageStyles = {
+var pageStyles = {
   color: "#232129",
   padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
+  fontFamily: "-apple-system, Roboto, sans-serif, serif"
+};
+
+var headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
-}
+  maxWidth: 320
+};
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
+var paragraphStyles = {
+  marginBottom: 48
+};
+
+var codeStyles = {
   color: "#8A6534",
   padding: 4,
   backgroundColor: "#FFF4DB",
   fontSize: "1.25rem",
-  borderRadius: 4,
-}
+  borderRadius: 4
+};
 
 // markup
 const NotFoundPage = () => {
@@ -58,6 +60,10 @@ export default NotFoundPage
 ;
 
 export {
+  pageStyles ,
+  headingStyles ,
+  paragraphStyles ,
+  codeStyles ,
   
 }
 /*  Not a pure module */
